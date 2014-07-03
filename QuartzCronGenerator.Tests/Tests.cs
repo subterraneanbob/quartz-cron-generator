@@ -93,5 +93,59 @@ namespace QuartzCronGenerator.Tests
             const string exprectedString2 = "SAT,SUN";
             Assert.Equal(exprectedString2, CronConverter.ToCronRepresentation(DaysOfWeek.Saturday | DaysOfWeek.Sunday));
         }
+
+        [Fact]
+        public void TestEverySpecificDayEveryNMonthAt()
+        {
+            var ce1 = CronExpression.EverySpecificDayEveryNMonthAt(1, 1, 12, 0);
+            var ce2 = CronExpression.EverySpecificDayEveryNMonthAt(7, 3, 7, 15);
+            var ce3 = CronExpression.EverySpecificDayEveryNMonthAt(28, 6, 21, 30);
+
+            Assert.Equal("0 0 12 1 1/1 ? *", ce1);
+            Assert.Equal("0 15 7 7 1/3 ? *", ce2);
+            Assert.Equal("0 30 21 28 1/6 ? *", ce3);
+        }
+
+        [Fact]
+        public void TestEverySpecificSeqWeekDayEveryNMonthAt()
+        {
+            var ce1 = CronExpression.EverySpecificSeqWeekDayEveryNMonthAt(DaySeqNumber.First, DaysOfWeek.Monday, 1, 12, 0);
+            var ce2 = CronExpression.EverySpecificSeqWeekDayEveryNMonthAt(DaySeqNumber.Second, DaysOfWeek.Wednesday, 3, 7, 15);
+            var ce3 = CronExpression.EverySpecificSeqWeekDayEveryNMonthAt(DaySeqNumber.Third, DaysOfWeek.Friday, 6, 21, 30);
+            var ce4 = CronExpression.EverySpecificSeqWeekDayEveryNMonthAt(DaySeqNumber.Fourth, DaysOfWeek.Sunday, 77, 22, 45);
+
+            Assert.Equal("0 0 12 ? 1/1 MON#1 *", ce1);
+            Assert.Equal("0 15 7 ? 1/3 WED#2 *", ce2);
+            Assert.Equal("0 30 21 ? 1/6 FRI#3 *", ce3);
+            Assert.Equal("0 45 22 ? 1/77 SUN#4 *", ce4);
+        }
+
+        [Fact]
+        public void TestEverySpecificDayOfMonthAt()
+        {
+            var ce1 = CronExpression.EverySpecificDayOfMonthAt(Months.January, 1, 12, 0);
+            var ce2 = CronExpression.EverySpecificDayOfMonthAt(Months.February, 3, 15, 17);
+            var ce3 = CronExpression.EverySpecificDayOfMonthAt(Months.August, 13, 20, 45);
+            var ce4 = CronExpression.EverySpecificDayOfMonthAt(Months.December, 16, 23, 59);
+
+            Assert.Equal("0 0 12 1 1 ? *", ce1);
+            Assert.Equal("0 17 15 3 2 ? *", ce2);
+            Assert.Equal("0 45 20 13 8 ? *", ce3);
+            Assert.Equal("0 59 23 16 12 ? *", ce4);
+        }
+
+        [Fact]
+        public void TestEverySpecificSeqWeekDayOfMonthAt()
+        {
+            var ce1 = CronExpression.EverySpecificSeqWeekDayOfMonthAt(DaySeqNumber.First, DaysOfWeek.Monday, Months.January, 12, 0);
+            var ce2 = CronExpression.EverySpecificSeqWeekDayOfMonthAt(DaySeqNumber.Second, DaysOfWeek.Wednesday, Months.February, 7, 15);
+            var ce3 = CronExpression.EverySpecificSeqWeekDayOfMonthAt(DaySeqNumber.Third, DaysOfWeek.Friday, Months.August, 21, 30);
+            var ce4 = CronExpression.EverySpecificSeqWeekDayOfMonthAt(DaySeqNumber.Fourth, DaysOfWeek.Sunday, Months.December, 22, 45);
+
+            Assert.Equal("0 0 12 ? 1 MON#1 *", ce1);
+            Assert.Equal("0 15 7 ? 2 WED#2 *", ce2);
+            Assert.Equal("0 30 21 ? 8 FRI#3 *", ce3);
+            Assert.Equal("0 45 22 ? 12 SUN#4 *", ce4);
+        }
     }
 }

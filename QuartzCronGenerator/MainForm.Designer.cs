@@ -51,21 +51,48 @@
             this.DaysLabel = new System.Windows.Forms.Label();
             this.DaysUpDown = new System.Windows.Forms.NumericUpDown();
             this.DailyRadioButton = new System.Windows.Forms.RadioButton();
+            this.WeeksPage = new System.Windows.Forms.TabPage();
+            this.SundayCheckBox = new System.Windows.Forms.CheckBox();
+            this.SaturdayCheckBox = new System.Windows.Forms.CheckBox();
+            this.FridayCheckBox = new System.Windows.Forms.CheckBox();
+            this.ThursdayCheckBox = new System.Windows.Forms.CheckBox();
+            this.WednesdayCheckBox = new System.Windows.Forms.CheckBox();
+            this.MinutesComboBox3 = new System.Windows.Forms.ComboBox();
+            this.HoursComboBox3 = new System.Windows.Forms.ComboBox();
+            this.StartTimeLabel2 = new System.Windows.Forms.Label();
+            this.TuesdayCheckBox = new System.Windows.Forms.CheckBox();
+            this.MondayCheckBox = new System.Windows.Forms.CheckBox();
+            this.MonthsPage = new System.Windows.Forms.TabPage();
+            this.MonthUpDown = new System.Windows.Forms.NumericUpDown();
+            this.MonthUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.DayUpDown = new System.Windows.Forms.NumericUpDown();
+            this.MinutesComboBox4 = new System.Windows.Forms.ComboBox();
+            this.HoursComboBox4 = new System.Windows.Forms.ComboBox();
+            this.StartTimeLabel3 = new System.Windows.Forms.Label();
+            this.MonthLabel2 = new System.Windows.Forms.Label();
+            this.OfEveryLabel2 = new System.Windows.Forms.Label();
+            this.DayOfWeekComboBox = new System.Windows.Forms.ComboBox();
+            this.SeqNumberComboBox = new System.Windows.Forms.ComboBox();
+            this.TheRadioButton = new System.Windows.Forms.RadioButton();
+            this.MonthLabel = new System.Windows.Forms.Label();
+            this.OfEveryLabel = new System.Windows.Forms.Label();
+            this.DayRadioButton = new System.Windows.Forms.RadioButton();
+            this.YearsPage = new System.Windows.Forms.TabPage();
+            this.MinutesComboBox5 = new System.Windows.Forms.ComboBox();
+            this.HoursComboBox5 = new System.Windows.Forms.ComboBox();
+            this.StartTimeLabel4 = new System.Windows.Forms.Label();
+            this.MonthComboBox2 = new System.Windows.Forms.ComboBox();
+            this.OfLabel = new System.Windows.Forms.Label();
+            this.DayOfWeekComboBox2 = new System.Windows.Forms.ComboBox();
+            this.SeqNumberComboBox2 = new System.Windows.Forms.ComboBox();
+            this.TheRadioButton2 = new System.Windows.Forms.RadioButton();
+            this.DayOfMonthUpDown = new System.Windows.Forms.NumericUpDown();
+            this.MonthComboBox = new System.Windows.Forms.ComboBox();
+            this.EveryRadioButton = new System.Windows.Forms.RadioButton();
             this.ExpressionPanel = new System.Windows.Forms.Panel();
             this.CopyButton = new System.Windows.Forms.Button();
             this.ButtonGenerate = new System.Windows.Forms.Button();
             this.CronExpressionTextBox = new System.Windows.Forms.TextBox();
-            this.WeeksPage = new System.Windows.Forms.TabPage();
-            this.MondayCheckBox = new System.Windows.Forms.CheckBox();
-            this.TuesdayCheckBox = new System.Windows.Forms.CheckBox();
-            this.MinutesComboBox3 = new System.Windows.Forms.ComboBox();
-            this.HoursComboBox3 = new System.Windows.Forms.ComboBox();
-            this.StartTimeLabel2 = new System.Windows.Forms.Label();
-            this.WednesdayCheckBox = new System.Windows.Forms.CheckBox();
-            this.ThursdayCheckBox = new System.Windows.Forms.CheckBox();
-            this.FridayCheckBox = new System.Windows.Forms.CheckBox();
-            this.SaturdayCheckBox = new System.Windows.Forms.CheckBox();
-            this.SundayCheckBox = new System.Windows.Forms.CheckBox();
             this.MainPanel.SuspendLayout();
             this.InputPanel.SuspendLayout();
             this.InputTabControl.SuspendLayout();
@@ -75,8 +102,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.HoursUpDown)).BeginInit();
             this.DaysPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DaysUpDown)).BeginInit();
-            this.ExpressionPanel.SuspendLayout();
             this.WeeksPage.SuspendLayout();
+            this.MonthsPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MonthUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MonthUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DayUpDown)).BeginInit();
+            this.YearsPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DayOfMonthUpDown)).BeginInit();
+            this.ExpressionPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // MainPanel
@@ -104,6 +137,8 @@
             this.InputTabControl.Controls.Add(this.HoursPage);
             this.InputTabControl.Controls.Add(this.DaysPage);
             this.InputTabControl.Controls.Add(this.WeeksPage);
+            this.InputTabControl.Controls.Add(this.MonthsPage);
+            this.InputTabControl.Controls.Add(this.YearsPage);
             this.InputTabControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.InputTabControl.Location = new System.Drawing.Point(0, 0);
             this.InputTabControl.Name = "InputTabControl";
@@ -524,47 +559,6 @@
             this.DailyRadioButton.Text = "Every";
             this.DailyRadioButton.UseVisualStyleBackColor = true;
             // 
-            // ExpressionPanel
-            // 
-            this.ExpressionPanel.Controls.Add(this.CopyButton);
-            this.ExpressionPanel.Controls.Add(this.ButtonGenerate);
-            this.ExpressionPanel.Controls.Add(this.CronExpressionTextBox);
-            this.ExpressionPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.ExpressionPanel.Location = new System.Drawing.Point(0, 211);
-            this.ExpressionPanel.Name = "ExpressionPanel";
-            this.ExpressionPanel.Size = new System.Drawing.Size(408, 124);
-            this.ExpressionPanel.TabIndex = 3;
-            // 
-            // CopyButton
-            // 
-            this.CopyButton.Location = new System.Drawing.Point(12, 73);
-            this.CopyButton.Name = "CopyButton";
-            this.CopyButton.Size = new System.Drawing.Size(101, 21);
-            this.CopyButton.TabIndex = 3;
-            this.CopyButton.Text = "Copy to clipboard";
-            this.CopyButton.UseVisualStyleBackColor = true;
-            this.CopyButton.Click += new System.EventHandler(this.CopyButton_Click);
-            // 
-            // ButtonGenerate
-            // 
-            this.ButtonGenerate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.ButtonGenerate.Location = new System.Drawing.Point(4, 6);
-            this.ButtonGenerate.Name = "ButtonGenerate";
-            this.ButtonGenerate.Size = new System.Drawing.Size(400, 34);
-            this.ButtonGenerate.TabIndex = 0;
-            this.ButtonGenerate.Text = "Generate Cron Expression";
-            this.ButtonGenerate.UseVisualStyleBackColor = true;
-            this.ButtonGenerate.Click += new System.EventHandler(this.ButtonGenerate_Click);
-            // 
-            // CronExpressionTextBox
-            // 
-            this.CronExpressionTextBox.Location = new System.Drawing.Point(119, 74);
-            this.CronExpressionTextBox.Name = "CronExpressionTextBox";
-            this.CronExpressionTextBox.ReadOnly = true;
-            this.CronExpressionTextBox.Size = new System.Drawing.Size(277, 20);
-            this.CronExpressionTextBox.TabIndex = 2;
-            // 
             // WeeksPage
             // 
             this.WeeksPage.Controls.Add(this.SundayCheckBox);
@@ -585,25 +579,55 @@
             this.WeeksPage.Text = "Weekly";
             this.WeeksPage.UseVisualStyleBackColor = true;
             // 
-            // MondayCheckBox
+            // SundayCheckBox
             // 
-            this.MondayCheckBox.AutoSize = true;
-            this.MondayCheckBox.Location = new System.Drawing.Point(20, 18);
-            this.MondayCheckBox.Name = "MondayCheckBox";
-            this.MondayCheckBox.Size = new System.Drawing.Size(64, 17);
-            this.MondayCheckBox.TabIndex = 0;
-            this.MondayCheckBox.Text = "Monday";
-            this.MondayCheckBox.UseVisualStyleBackColor = true;
+            this.SundayCheckBox.AutoSize = true;
+            this.SundayCheckBox.Location = new System.Drawing.Point(163, 41);
+            this.SundayCheckBox.Name = "SundayCheckBox";
+            this.SundayCheckBox.Size = new System.Drawing.Size(62, 17);
+            this.SundayCheckBox.TabIndex = 18;
+            this.SundayCheckBox.Text = "Sunday";
+            this.SundayCheckBox.UseVisualStyleBackColor = true;
             // 
-            // TuesdayCheckBox
+            // SaturdayCheckBox
             // 
-            this.TuesdayCheckBox.AutoSize = true;
-            this.TuesdayCheckBox.Location = new System.Drawing.Point(90, 18);
-            this.TuesdayCheckBox.Name = "TuesdayCheckBox";
-            this.TuesdayCheckBox.Size = new System.Drawing.Size(67, 17);
-            this.TuesdayCheckBox.TabIndex = 1;
-            this.TuesdayCheckBox.Text = "Tuesday";
-            this.TuesdayCheckBox.UseVisualStyleBackColor = true;
+            this.SaturdayCheckBox.AutoSize = true;
+            this.SaturdayCheckBox.Location = new System.Drawing.Point(90, 41);
+            this.SaturdayCheckBox.Name = "SaturdayCheckBox";
+            this.SaturdayCheckBox.Size = new System.Drawing.Size(68, 17);
+            this.SaturdayCheckBox.TabIndex = 17;
+            this.SaturdayCheckBox.Text = "Saturday";
+            this.SaturdayCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // FridayCheckBox
+            // 
+            this.FridayCheckBox.AutoSize = true;
+            this.FridayCheckBox.Location = new System.Drawing.Point(20, 41);
+            this.FridayCheckBox.Name = "FridayCheckBox";
+            this.FridayCheckBox.Size = new System.Drawing.Size(54, 17);
+            this.FridayCheckBox.TabIndex = 16;
+            this.FridayCheckBox.Text = "Friday";
+            this.FridayCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // ThursdayCheckBox
+            // 
+            this.ThursdayCheckBox.AutoSize = true;
+            this.ThursdayCheckBox.Location = new System.Drawing.Point(252, 18);
+            this.ThursdayCheckBox.Name = "ThursdayCheckBox";
+            this.ThursdayCheckBox.Size = new System.Drawing.Size(70, 17);
+            this.ThursdayCheckBox.TabIndex = 15;
+            this.ThursdayCheckBox.Text = "Thursday";
+            this.ThursdayCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // WednesdayCheckBox
+            // 
+            this.WednesdayCheckBox.AutoSize = true;
+            this.WednesdayCheckBox.Location = new System.Drawing.Point(163, 18);
+            this.WednesdayCheckBox.Name = "WednesdayCheckBox";
+            this.WednesdayCheckBox.Size = new System.Drawing.Size(83, 17);
+            this.WednesdayCheckBox.TabIndex = 14;
+            this.WednesdayCheckBox.Text = "Wednesday";
+            this.WednesdayCheckBox.UseVisualStyleBackColor = true;
             // 
             // MinutesComboBox3
             // 
@@ -718,55 +742,620 @@
             this.StartTimeLabel2.TabIndex = 11;
             this.StartTimeLabel2.Text = "Start time";
             // 
-            // WednesdayCheckBox
+            // TuesdayCheckBox
             // 
-            this.WednesdayCheckBox.AutoSize = true;
-            this.WednesdayCheckBox.Location = new System.Drawing.Point(163, 18);
-            this.WednesdayCheckBox.Name = "WednesdayCheckBox";
-            this.WednesdayCheckBox.Size = new System.Drawing.Size(83, 17);
-            this.WednesdayCheckBox.TabIndex = 14;
-            this.WednesdayCheckBox.Text = "Wednesday";
-            this.WednesdayCheckBox.UseVisualStyleBackColor = true;
+            this.TuesdayCheckBox.AutoSize = true;
+            this.TuesdayCheckBox.Location = new System.Drawing.Point(90, 18);
+            this.TuesdayCheckBox.Name = "TuesdayCheckBox";
+            this.TuesdayCheckBox.Size = new System.Drawing.Size(67, 17);
+            this.TuesdayCheckBox.TabIndex = 1;
+            this.TuesdayCheckBox.Text = "Tuesday";
+            this.TuesdayCheckBox.UseVisualStyleBackColor = true;
             // 
-            // ThursdayCheckBox
+            // MondayCheckBox
             // 
-            this.ThursdayCheckBox.AutoSize = true;
-            this.ThursdayCheckBox.Location = new System.Drawing.Point(252, 18);
-            this.ThursdayCheckBox.Name = "ThursdayCheckBox";
-            this.ThursdayCheckBox.Size = new System.Drawing.Size(70, 17);
-            this.ThursdayCheckBox.TabIndex = 15;
-            this.ThursdayCheckBox.Text = "Thursday";
-            this.ThursdayCheckBox.UseVisualStyleBackColor = true;
+            this.MondayCheckBox.AutoSize = true;
+            this.MondayCheckBox.Location = new System.Drawing.Point(20, 18);
+            this.MondayCheckBox.Name = "MondayCheckBox";
+            this.MondayCheckBox.Size = new System.Drawing.Size(64, 17);
+            this.MondayCheckBox.TabIndex = 0;
+            this.MondayCheckBox.Text = "Monday";
+            this.MondayCheckBox.UseVisualStyleBackColor = true;
             // 
-            // FridayCheckBox
+            // MonthsPage
             // 
-            this.FridayCheckBox.AutoSize = true;
-            this.FridayCheckBox.Location = new System.Drawing.Point(20, 41);
-            this.FridayCheckBox.Name = "FridayCheckBox";
-            this.FridayCheckBox.Size = new System.Drawing.Size(54, 17);
-            this.FridayCheckBox.TabIndex = 16;
-            this.FridayCheckBox.Text = "Friday";
-            this.FridayCheckBox.UseVisualStyleBackColor = true;
+            this.MonthsPage.Controls.Add(this.MonthUpDown);
+            this.MonthsPage.Controls.Add(this.MonthUpDown2);
+            this.MonthsPage.Controls.Add(this.DayUpDown);
+            this.MonthsPage.Controls.Add(this.MinutesComboBox4);
+            this.MonthsPage.Controls.Add(this.HoursComboBox4);
+            this.MonthsPage.Controls.Add(this.StartTimeLabel3);
+            this.MonthsPage.Controls.Add(this.MonthLabel2);
+            this.MonthsPage.Controls.Add(this.OfEveryLabel2);
+            this.MonthsPage.Controls.Add(this.DayOfWeekComboBox);
+            this.MonthsPage.Controls.Add(this.SeqNumberComboBox);
+            this.MonthsPage.Controls.Add(this.TheRadioButton);
+            this.MonthsPage.Controls.Add(this.MonthLabel);
+            this.MonthsPage.Controls.Add(this.OfEveryLabel);
+            this.MonthsPage.Controls.Add(this.DayRadioButton);
+            this.MonthsPage.Location = new System.Drawing.Point(4, 22);
+            this.MonthsPage.Name = "MonthsPage";
+            this.MonthsPage.Padding = new System.Windows.Forms.Padding(3);
+            this.MonthsPage.Size = new System.Drawing.Size(400, 185);
+            this.MonthsPage.TabIndex = 4;
+            this.MonthsPage.Text = "Montly";
+            this.MonthsPage.UseVisualStyleBackColor = true;
             // 
-            // SaturdayCheckBox
+            // MonthUpDown
             // 
-            this.SaturdayCheckBox.AutoSize = true;
-            this.SaturdayCheckBox.Location = new System.Drawing.Point(90, 41);
-            this.SaturdayCheckBox.Name = "SaturdayCheckBox";
-            this.SaturdayCheckBox.Size = new System.Drawing.Size(68, 17);
-            this.SaturdayCheckBox.TabIndex = 17;
-            this.SaturdayCheckBox.Text = "Saturday";
-            this.SaturdayCheckBox.UseVisualStyleBackColor = true;
+            this.MonthUpDown.Location = new System.Drawing.Point(160, 16);
+            this.MonthUpDown.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
+            this.MonthUpDown.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.MonthUpDown.Name = "MonthUpDown";
+            this.MonthUpDown.Size = new System.Drawing.Size(39, 20);
+            this.MonthUpDown.TabIndex = 18;
+            this.MonthUpDown.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
-            // SundayCheckBox
+            // MonthUpDown2
             // 
-            this.SundayCheckBox.AutoSize = true;
-            this.SundayCheckBox.Location = new System.Drawing.Point(163, 41);
-            this.SundayCheckBox.Name = "SundayCheckBox";
-            this.SundayCheckBox.Size = new System.Drawing.Size(62, 17);
-            this.SundayCheckBox.TabIndex = 18;
-            this.SundayCheckBox.Text = "Sunday";
-            this.SundayCheckBox.UseVisualStyleBackColor = true;
+            this.MonthUpDown2.Location = new System.Drawing.Point(274, 49);
+            this.MonthUpDown2.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
+            this.MonthUpDown2.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.MonthUpDown2.Name = "MonthUpDown2";
+            this.MonthUpDown2.Size = new System.Drawing.Size(39, 20);
+            this.MonthUpDown2.TabIndex = 17;
+            this.MonthUpDown2.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // DayUpDown
+            // 
+            this.DayUpDown.Location = new System.Drawing.Point(62, 16);
+            this.DayUpDown.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
+            this.DayUpDown.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.DayUpDown.Name = "DayUpDown";
+            this.DayUpDown.Size = new System.Drawing.Size(39, 20);
+            this.DayUpDown.TabIndex = 16;
+            this.DayUpDown.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // MinutesComboBox4
+            // 
+            this.MinutesComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.MinutesComboBox4.FormattingEnabled = true;
+            this.MinutesComboBox4.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59"});
+            this.MinutesComboBox4.Location = new System.Drawing.Point(123, 86);
+            this.MinutesComboBox4.Name = "MinutesComboBox4";
+            this.MinutesComboBox4.Size = new System.Drawing.Size(47, 21);
+            this.MinutesComboBox4.TabIndex = 15;
+            // 
+            // HoursComboBox4
+            // 
+            this.HoursComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.HoursComboBox4.FormattingEnabled = true;
+            this.HoursComboBox4.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"});
+            this.HoursComboBox4.Location = new System.Drawing.Point(70, 86);
+            this.HoursComboBox4.Name = "HoursComboBox4";
+            this.HoursComboBox4.Size = new System.Drawing.Size(47, 21);
+            this.HoursComboBox4.TabIndex = 14;
+            // 
+            // StartTimeLabel3
+            // 
+            this.StartTimeLabel3.AutoSize = true;
+            this.StartTimeLabel3.Location = new System.Drawing.Point(13, 89);
+            this.StartTimeLabel3.Name = "StartTimeLabel3";
+            this.StartTimeLabel3.Size = new System.Drawing.Size(51, 13);
+            this.StartTimeLabel3.TabIndex = 11;
+            this.StartTimeLabel3.Text = "Start time";
+            // 
+            // MonthLabel2
+            // 
+            this.MonthLabel2.AutoSize = true;
+            this.MonthLabel2.Location = new System.Drawing.Point(321, 52);
+            this.MonthLabel2.Name = "MonthLabel2";
+            this.MonthLabel2.Size = new System.Drawing.Size(47, 13);
+            this.MonthLabel2.TabIndex = 10;
+            this.MonthLabel2.Text = "month(s)";
+            // 
+            // OfEveryLabel2
+            // 
+            this.OfEveryLabel2.AutoSize = true;
+            this.OfEveryLabel2.Location = new System.Drawing.Point(223, 53);
+            this.OfEveryLabel2.Name = "OfEveryLabel2";
+            this.OfEveryLabel2.Size = new System.Drawing.Size(45, 13);
+            this.OfEveryLabel2.TabIndex = 8;
+            this.OfEveryLabel2.Text = "of every";
+            // 
+            // DayOfWeekComboBox
+            // 
+            this.DayOfWeekComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.DayOfWeekComboBox.FormattingEnabled = true;
+            this.DayOfWeekComboBox.Items.AddRange(new object[] {
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"});
+            this.DayOfWeekComboBox.Location = new System.Drawing.Point(145, 49);
+            this.DayOfWeekComboBox.Name = "DayOfWeekComboBox";
+            this.DayOfWeekComboBox.Size = new System.Drawing.Size(72, 21);
+            this.DayOfWeekComboBox.TabIndex = 7;
+            // 
+            // SeqNumberComboBox
+            // 
+            this.SeqNumberComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.SeqNumberComboBox.FormattingEnabled = true;
+            this.SeqNumberComboBox.Items.AddRange(new object[] {
+            "First",
+            "Second",
+            "Third",
+            "Fourth"});
+            this.SeqNumberComboBox.Location = new System.Drawing.Point(66, 49);
+            this.SeqNumberComboBox.Name = "SeqNumberComboBox";
+            this.SeqNumberComboBox.Size = new System.Drawing.Size(73, 21);
+            this.SeqNumberComboBox.TabIndex = 6;
+            // 
+            // TheRadioButton
+            // 
+            this.TheRadioButton.AutoSize = true;
+            this.TheRadioButton.Location = new System.Drawing.Point(12, 51);
+            this.TheRadioButton.Name = "TheRadioButton";
+            this.TheRadioButton.Size = new System.Drawing.Size(44, 17);
+            this.TheRadioButton.TabIndex = 5;
+            this.TheRadioButton.Text = "The";
+            this.TheRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // MonthLabel
+            // 
+            this.MonthLabel.AutoSize = true;
+            this.MonthLabel.Location = new System.Drawing.Point(205, 19);
+            this.MonthLabel.Name = "MonthLabel";
+            this.MonthLabel.Size = new System.Drawing.Size(47, 13);
+            this.MonthLabel.TabIndex = 4;
+            this.MonthLabel.Text = "month(s)";
+            // 
+            // OfEveryLabel
+            // 
+            this.OfEveryLabel.AutoSize = true;
+            this.OfEveryLabel.Location = new System.Drawing.Point(109, 18);
+            this.OfEveryLabel.Name = "OfEveryLabel";
+            this.OfEveryLabel.Size = new System.Drawing.Size(45, 13);
+            this.OfEveryLabel.TabIndex = 2;
+            this.OfEveryLabel.Text = "of every";
+            // 
+            // DayRadioButton
+            // 
+            this.DayRadioButton.AutoSize = true;
+            this.DayRadioButton.Checked = true;
+            this.DayRadioButton.Location = new System.Drawing.Point(12, 17);
+            this.DayRadioButton.Name = "DayRadioButton";
+            this.DayRadioButton.Size = new System.Drawing.Size(44, 17);
+            this.DayRadioButton.TabIndex = 0;
+            this.DayRadioButton.TabStop = true;
+            this.DayRadioButton.Text = "Day";
+            this.DayRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // YearsPage
+            // 
+            this.YearsPage.Controls.Add(this.MinutesComboBox5);
+            this.YearsPage.Controls.Add(this.HoursComboBox5);
+            this.YearsPage.Controls.Add(this.StartTimeLabel4);
+            this.YearsPage.Controls.Add(this.MonthComboBox2);
+            this.YearsPage.Controls.Add(this.OfLabel);
+            this.YearsPage.Controls.Add(this.DayOfWeekComboBox2);
+            this.YearsPage.Controls.Add(this.SeqNumberComboBox2);
+            this.YearsPage.Controls.Add(this.TheRadioButton2);
+            this.YearsPage.Controls.Add(this.DayOfMonthUpDown);
+            this.YearsPage.Controls.Add(this.MonthComboBox);
+            this.YearsPage.Controls.Add(this.EveryRadioButton);
+            this.YearsPage.Location = new System.Drawing.Point(4, 22);
+            this.YearsPage.Name = "YearsPage";
+            this.YearsPage.Padding = new System.Windows.Forms.Padding(3);
+            this.YearsPage.Size = new System.Drawing.Size(400, 185);
+            this.YearsPage.TabIndex = 5;
+            this.YearsPage.Text = "Yearly";
+            this.YearsPage.UseVisualStyleBackColor = true;
+            // 
+            // MinutesComboBox5
+            // 
+            this.MinutesComboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.MinutesComboBox5.FormattingEnabled = true;
+            this.MinutesComboBox5.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59"});
+            this.MinutesComboBox5.Location = new System.Drawing.Point(119, 86);
+            this.MinutesComboBox5.Name = "MinutesComboBox5";
+            this.MinutesComboBox5.Size = new System.Drawing.Size(47, 21);
+            this.MinutesComboBox5.TabIndex = 27;
+            // 
+            // HoursComboBox5
+            // 
+            this.HoursComboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.HoursComboBox5.FormattingEnabled = true;
+            this.HoursComboBox5.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"});
+            this.HoursComboBox5.Location = new System.Drawing.Point(66, 86);
+            this.HoursComboBox5.Name = "HoursComboBox5";
+            this.HoursComboBox5.Size = new System.Drawing.Size(47, 21);
+            this.HoursComboBox5.TabIndex = 26;
+            // 
+            // StartTimeLabel4
+            // 
+            this.StartTimeLabel4.AutoSize = true;
+            this.StartTimeLabel4.Location = new System.Drawing.Point(9, 89);
+            this.StartTimeLabel4.Name = "StartTimeLabel4";
+            this.StartTimeLabel4.Size = new System.Drawing.Size(51, 13);
+            this.StartTimeLabel4.TabIndex = 25;
+            this.StartTimeLabel4.Text = "Start time";
+            // 
+            // MonthComboBox2
+            // 
+            this.MonthComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.MonthComboBox2.FormattingEnabled = true;
+            this.MonthComboBox2.Items.AddRange(new object[] {
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"});
+            this.MonthComboBox2.Location = new System.Drawing.Point(245, 47);
+            this.MonthComboBox2.Name = "MonthComboBox2";
+            this.MonthComboBox2.Size = new System.Drawing.Size(121, 21);
+            this.MonthComboBox2.TabIndex = 24;
+            // 
+            // OfLabel
+            // 
+            this.OfLabel.AutoSize = true;
+            this.OfLabel.Location = new System.Drawing.Point(223, 51);
+            this.OfLabel.Name = "OfLabel";
+            this.OfLabel.Size = new System.Drawing.Size(16, 13);
+            this.OfLabel.TabIndex = 23;
+            this.OfLabel.Text = "of";
+            // 
+            // DayOfWeekComboBox2
+            // 
+            this.DayOfWeekComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.DayOfWeekComboBox2.FormattingEnabled = true;
+            this.DayOfWeekComboBox2.Items.AddRange(new object[] {
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"});
+            this.DayOfWeekComboBox2.Location = new System.Drawing.Point(145, 47);
+            this.DayOfWeekComboBox2.Name = "DayOfWeekComboBox2";
+            this.DayOfWeekComboBox2.Size = new System.Drawing.Size(72, 21);
+            this.DayOfWeekComboBox2.TabIndex = 22;
+            // 
+            // SeqNumberComboBox2
+            // 
+            this.SeqNumberComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.SeqNumberComboBox2.FormattingEnabled = true;
+            this.SeqNumberComboBox2.Items.AddRange(new object[] {
+            "First",
+            "Second",
+            "Third",
+            "Fourth"});
+            this.SeqNumberComboBox2.Location = new System.Drawing.Point(66, 47);
+            this.SeqNumberComboBox2.Name = "SeqNumberComboBox2";
+            this.SeqNumberComboBox2.Size = new System.Drawing.Size(73, 21);
+            this.SeqNumberComboBox2.TabIndex = 21;
+            // 
+            // TheRadioButton2
+            // 
+            this.TheRadioButton2.AutoSize = true;
+            this.TheRadioButton2.Location = new System.Drawing.Point(8, 49);
+            this.TheRadioButton2.Name = "TheRadioButton2";
+            this.TheRadioButton2.Size = new System.Drawing.Size(44, 17);
+            this.TheRadioButton2.TabIndex = 20;
+            this.TheRadioButton2.Text = "The";
+            this.TheRadioButton2.UseVisualStyleBackColor = true;
+            // 
+            // DayOfMonthUpDown
+            // 
+            this.DayOfMonthUpDown.Location = new System.Drawing.Point(193, 15);
+            this.DayOfMonthUpDown.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
+            this.DayOfMonthUpDown.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.DayOfMonthUpDown.Name = "DayOfMonthUpDown";
+            this.DayOfMonthUpDown.Size = new System.Drawing.Size(47, 20);
+            this.DayOfMonthUpDown.TabIndex = 19;
+            this.DayOfMonthUpDown.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // MonthComboBox
+            // 
+            this.MonthComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.MonthComboBox.FormattingEnabled = true;
+            this.MonthComboBox.Items.AddRange(new object[] {
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"});
+            this.MonthComboBox.Location = new System.Drawing.Point(66, 14);
+            this.MonthComboBox.Name = "MonthComboBox";
+            this.MonthComboBox.Size = new System.Drawing.Size(121, 21);
+            this.MonthComboBox.TabIndex = 1;
+            // 
+            // EveryRadioButton
+            // 
+            this.EveryRadioButton.AutoSize = true;
+            this.EveryRadioButton.Checked = true;
+            this.EveryRadioButton.Location = new System.Drawing.Point(8, 15);
+            this.EveryRadioButton.Name = "EveryRadioButton";
+            this.EveryRadioButton.Size = new System.Drawing.Size(52, 17);
+            this.EveryRadioButton.TabIndex = 0;
+            this.EveryRadioButton.TabStop = true;
+            this.EveryRadioButton.Text = "Every";
+            this.EveryRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // ExpressionPanel
+            // 
+            this.ExpressionPanel.Controls.Add(this.CopyButton);
+            this.ExpressionPanel.Controls.Add(this.ButtonGenerate);
+            this.ExpressionPanel.Controls.Add(this.CronExpressionTextBox);
+            this.ExpressionPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.ExpressionPanel.Location = new System.Drawing.Point(0, 211);
+            this.ExpressionPanel.Name = "ExpressionPanel";
+            this.ExpressionPanel.Size = new System.Drawing.Size(408, 124);
+            this.ExpressionPanel.TabIndex = 3;
+            // 
+            // CopyButton
+            // 
+            this.CopyButton.Location = new System.Drawing.Point(12, 73);
+            this.CopyButton.Name = "CopyButton";
+            this.CopyButton.Size = new System.Drawing.Size(101, 21);
+            this.CopyButton.TabIndex = 3;
+            this.CopyButton.Text = "Copy to clipboard";
+            this.CopyButton.UseVisualStyleBackColor = true;
+            this.CopyButton.Click += new System.EventHandler(this.CopyButton_Click);
+            // 
+            // ButtonGenerate
+            // 
+            this.ButtonGenerate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ButtonGenerate.Location = new System.Drawing.Point(4, 6);
+            this.ButtonGenerate.Name = "ButtonGenerate";
+            this.ButtonGenerate.Size = new System.Drawing.Size(400, 34);
+            this.ButtonGenerate.TabIndex = 0;
+            this.ButtonGenerate.Text = "Generate Cron Expression";
+            this.ButtonGenerate.UseVisualStyleBackColor = true;
+            this.ButtonGenerate.Click += new System.EventHandler(this.ButtonGenerate_Click);
+            // 
+            // CronExpressionTextBox
+            // 
+            this.CronExpressionTextBox.Location = new System.Drawing.Point(119, 74);
+            this.CronExpressionTextBox.Name = "CronExpressionTextBox";
+            this.CronExpressionTextBox.ReadOnly = true;
+            this.CronExpressionTextBox.Size = new System.Drawing.Size(277, 20);
+            this.CronExpressionTextBox.TabIndex = 2;
             // 
             // MainForm
             // 
@@ -791,10 +1380,18 @@
             this.DaysPage.ResumeLayout(false);
             this.DaysPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DaysUpDown)).EndInit();
-            this.ExpressionPanel.ResumeLayout(false);
-            this.ExpressionPanel.PerformLayout();
             this.WeeksPage.ResumeLayout(false);
             this.WeeksPage.PerformLayout();
+            this.MonthsPage.ResumeLayout(false);
+            this.MonthsPage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MonthUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MonthUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DayUpDown)).EndInit();
+            this.YearsPage.ResumeLayout(false);
+            this.YearsPage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DayOfMonthUpDown)).EndInit();
+            this.ExpressionPanel.ResumeLayout(false);
+            this.ExpressionPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -838,6 +1435,33 @@
         private System.Windows.Forms.CheckBox FridayCheckBox;
         private System.Windows.Forms.CheckBox ThursdayCheckBox;
         private System.Windows.Forms.CheckBox WednesdayCheckBox;
+        private System.Windows.Forms.TabPage MonthsPage;
+        private System.Windows.Forms.RadioButton DayRadioButton;
+        private System.Windows.Forms.Label OfEveryLabel;
+        private System.Windows.Forms.Label MonthLabel;
+        private System.Windows.Forms.RadioButton TheRadioButton;
+        private System.Windows.Forms.ComboBox DayOfWeekComboBox;
+        private System.Windows.Forms.ComboBox SeqNumberComboBox;
+        private System.Windows.Forms.Label OfEveryLabel2;
+        private System.Windows.Forms.Label MonthLabel2;
+        private System.Windows.Forms.Label StartTimeLabel3;
+        private System.Windows.Forms.ComboBox MinutesComboBox4;
+        private System.Windows.Forms.ComboBox HoursComboBox4;
+        private System.Windows.Forms.NumericUpDown DayUpDown;
+        private System.Windows.Forms.NumericUpDown MonthUpDown2;
+        private System.Windows.Forms.NumericUpDown MonthUpDown;
+        private System.Windows.Forms.TabPage YearsPage;
+        private System.Windows.Forms.RadioButton EveryRadioButton;
+        private System.Windows.Forms.ComboBox MonthComboBox;
+        private System.Windows.Forms.NumericUpDown DayOfMonthUpDown;
+        private System.Windows.Forms.ComboBox MonthComboBox2;
+        private System.Windows.Forms.Label OfLabel;
+        private System.Windows.Forms.ComboBox DayOfWeekComboBox2;
+        private System.Windows.Forms.ComboBox SeqNumberComboBox2;
+        private System.Windows.Forms.RadioButton TheRadioButton2;
+        private System.Windows.Forms.ComboBox MinutesComboBox5;
+        private System.Windows.Forms.ComboBox HoursComboBox5;
+        private System.Windows.Forms.Label StartTimeLabel4;
     }
 }
 

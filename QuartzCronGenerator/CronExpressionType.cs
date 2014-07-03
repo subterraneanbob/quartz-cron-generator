@@ -8,5 +8,9 @@
         EveryNDaysAt,
         EveryWeekDay,
         EverySpecificWeekDayAt,
+        EverySpecificDayEveryNMonthAt,
+        EverySpecificSeqWeekDayEveryNMonthAt,
+        EverySpecificDayOfMonthAt,
+        EverySpecificSeqWeekDayOfMonthAt,
     }
 }

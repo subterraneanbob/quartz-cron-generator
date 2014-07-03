@@ -29,6 +29,12 @@ namespace QuartzCronGenerator
             }
         }
 
+        /// <summary>
+        /// Converts enumerator DaysOfWeek into string representation
+        /// like "MON, TUE, WED"
+        /// </summary>
+        /// <param name="days">Enumerator to convert</param>
+        /// <returns>String representation</returns>
         public static string ToCronRepresentation(DaysOfWeek days)
         {
             return String.Join(",", GetFlags(days).Select(ToCronRepresentationSingle));
